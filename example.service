@@ -1,0 +1,6 @@
+[Service]
+Type=oneshot
+ExecStart=/path/to/s3ql_backup_service.py -I --ssl -c "1,7,14,31,90,180" gs://mybucket /home/bob/Documents
+TimeoutStopSec=259200
+User=bob
+Group=bob
